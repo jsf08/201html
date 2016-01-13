@@ -1,0 +1,128 @@
+
+           
+	   #header{
+                background-color:rgb(27, 17, 138);
+                padding: 10px;
+		height: 300px;
+                border: 3px solid black;
+		overflow: hidden;
+            }
+            #first-line
+            {
+                text-align: left;
+                margin-top: 25px;
+                margin-left: 15px;
+                line-height: 0.001;
+            }
+            #headshot{
+                height: 200px;
+                margin-top: 20px;
+                margin-left: 15px;
+            	float:left; 
+                border: 3px solid black;
+            }
+            #quote
+            {
+                text-align: center;
+                float:left;
+                margin-top: 45px;
+                margin-left:50px;
+                
+            }
+            .da-bod{
+                background-color:rgb(176, 173, 199);
+                z-index: 1;
+                padding:25px;
+                border: 3px solid black;
+                overflow: hidden;
+            }
+            #list-1{
+                float: left;
+                margin-left: 15px;
+            }
+            #list-2{
+                 float: left;
+                 margin-left: 30px;
+            }
+            .captions{
+                 text-align: center;
+                 font-weight: bold;
+            }
+            #achievements1{
+              margin-bottom:100px;
+	    }	
+	   #achievements2{ 
+               margin-top:35px; 
+             } 
+             #plays{ 
+                 float: left; 
+             } 
+             #ewell{ 
+                 height:200px; 
+ 		border: 2px solid black; 
+             } 
+             #pokemon{ 
+                 float: left; 
+                 margin-left:40px; 
+             } 
+             #trainer{ 
+                 height:200px; 
+                 float: left; 
+ 		margin-left:25px; 
+ 		border: 2px solid black; 
+             } 
+              #mission{ 
+                 float: left; 
+ 		margin-left:40px; 
+             } 
+             #elder{ 
+                 height:200px; 
+                 float: left; 
+ 		margin-left:40px; 
+ 		border: 2px solid black; 
+             } 
+             #bands{ 
+                 float: left; 
+             } 
+             #ends{ 
+                 height:200px; 
+                 float: left; 
+ 		border: 2px solid black; 
+             } 
+             #smash{ 
+                 float: left; 
+                 margin-left:30px; 
+            } 
+             #bros{ 
+                 height:200px; 
+                 float: left; 
+ 		margin-left:40px; 
+ 		border: 2px solid black; 
+             }
+              #airbender{ 
+                 float: left; 
+ 		margin-left:20px; 
+             } 
+             #avatar{ 
+                 height:200px; 
+                 float: left; 
+ 		border: 2px solid black; 
+ 		margin-left:35px; 
+             } 
+ 	    #footer{ 
+                 background-color:rgb(27, 17, 138); 
+                padding: 10px;
+                 border: 3px solid black; 
+             } 
+             #end{ 
+                 text-align:left; 
+                 margin-left:15px; 
+                 margin-top:0px; 
+             } 
+             #contact-info 
+             { 
+                 text-align:left; 
+                 margin-left:45px; 
+             } 
+
+
