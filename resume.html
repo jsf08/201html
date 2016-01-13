@@ -2,137 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Event invite</title>
-        <style>
-       
-            #header{
-                background-color:rgb(27, 17, 138);
-                padding: 10px;
-                height: 300px;
-                border: 3px solid black;
-            }
-            #first-line
-            {
-                text-align: left;
-                margin-top: 25px;
-                margin-left: 15px;
-                line-height: 0.001;
-            }
-            #headshot{
-                height: 200px;
-                margin-top: 20px;
-                margin-left: 15px;
-                float: left;
-                border: 3px solid black;
-            }
-            #quote
-            {
-                text-align: center;
-                float: left;
-                margin-top: 45px;
-                margin-left:50px;
-                
-            }
-            .da-bod{
-                background-color:rgb(176, 173, 199);
-                z-index: 1;
-                padding:25px;
-                border: 3px solid black;
-                overflow: hidden;
-            }
-            #list-1{
-                float: left;
-                margin-left: 15px;
-            }
-            #list-2{
-                 float: left;
-                 margin-left: 30px;
-            }
-            .captions{
-                 text-align: center;
-                 font-weight: bold;
-            }
-            #achievements1{
-              margin-bottom:100px;
-            }
-            #achievements2{
-              margin-top:35px;
-            }
-            #plays{
-                float: left;
-            }
-            #ewell{
-                height:200px;
-		border: 2px solid black;
-            }
-            #pokemon{
-                float: left;
-                margin-left:40px;
-            }
-            #trainer{
-                height:200px;
-                float: left;
-		margin-left:25px;
-		border: 2px solid black;
-            }
-             #mission{
-                float: left;
-		margin-left:40px;
-            }
-            #elder{
-                height:200px;
-                float: left;
-		margin-left:40px;
-		border: 2px solid black;
-            }
-            #bands{
-                float: left;
-            }
-            #ends{
-                height:200px;
-                float: left;
-		border: 2px solid black;
-            }
-            #smash{
-                float: left;
-                margin-left:30px;
-            }
-            #bros{
-                height:200px;
-                float: left;
-		margin-left:40px;
-		border: 2px solid black;
-            }
-            #airbender{
-                float: left;
-		margin-left:20px;
-            }
-            #avatar{
-                height:200px;
-                float: left;
-		border: 2px solid black;
-		margin-left:35px;
-            }
-	    #footer{
-                background-color:rgb(27, 17, 138);
-                padding: 10px;
-                height: 150px;
-                border: 3px solid black;
-            }
-            #end{
-                text-align:left;
-                margin-left:15px;
-                margin-top:0px;
-            }
-            #contact-info
-            {
-                text-align:left;
-                margin-left:45px;
-            }
-        </style>
+        <title>Jacob Farnsworth Resume</title>
+
+	<link rel="stylesheet"  type="text/css" href="resume.css">
     </head>
-    <body>
-        <div id="header">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+<script>
+$(document).ready(function(){
+	$("form").submit(function(){
+	alert("Congratulations! You are now satisfied!");
+    });
+});
+</script>
+     <body>       
+	<div id="header">
         <h1 id = "first-line">Jacob Farnsworth</h1>
         
         <img id = "headshot" src = "http://i.imgur.com/jwS7WLu.jpg">
@@ -142,10 +29,11 @@
             </h2>
         </div>
         </div>
-        <div class = "da-bod">
+
+       <div class = "da-bod">
         <div id = "bio">
         <h4>BIO </h4>
-        <p>(insert bio here) </p>
+<p>Born to goodly parents Jacob soon grew into the legend he is today. Developing his<br> diverse skillset at a young age  he soon left home to further his training. Through his<br> travels he was able to see the world and expeirence the wonders it contained. From <br>the firtle shores of the fire nation to the peak of Mt. Silver he has seen it all and is<br> now ready to share them and give back to society.<br><b> Whatever needs to be done, he can do it.</b> </p>
         </div>
         <div>
         <h4 style = "text-align:left; margin-bottom: 0px;"> WHAT I SKILLS I BRING TO THE GAME: </h4>
@@ -187,7 +75,7 @@
          <div id = "achievements2">
                
            <div id="bands">
-               <p class = "captions" >Won various battle of the bands<br>competitions with several bands</p>
+               <p class = "captions" >Won various battle of the bands<br>competitions with several groups</p>
                <img id = "ends" src = "http://i.imgur.com/spPlJ5N.jpg">
            </div>
            <div id="smash">
@@ -195,7 +83,7 @@
                <img id = "bros" src = "http://i.imgur.com/F3RUCoP.jpg" >
            </div>
            <div id="airbender">
-               <p class = "captions" >Traveled the world, mastering the elements<br>to become a fully realized Avatar</p> <img id = "avatar" src ="http://i.imgur.com/rwC4Bet.jpg" >
+               <p class = "captions" >Traveled the world, mastering the<br> elements to become the  Avatar</p> <img id = "avatar" src ="http://i.imgur.com/rwC4Bet.jpg" >
            </div>
            
            </div>
@@ -204,7 +92,21 @@
         <div id="footer">
         <h2 id = "end">Contact Info:</h2>
         <h3 id = "contact-info">jacob.farnsworth08@gmail.com<br>801-867-5309<br>Send up the batsignal - i'll find you</h3>
-        </div>
+ <form id = "form" fuction="">
+  <fieldset>
+  <legend><b>Insert Personal Info Below For Free GUARENTEED Satisfaction:</b></legend>
+ <b> First name:</b><br>
+  <input type="text" name="firstname" value="">
+  <br>
+ <b> Last name:</b><br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+  </fieldset>
+</form> 
+      
+
+ </div>
     </body>
 </html>
 
