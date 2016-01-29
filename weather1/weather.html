@@ -1,83 +1,36 @@
+<head>
 <title>Weather Checker</title>
+
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+<script src="weather.js"></script>
 
+<link rel="stylesheet" type="text/css" href="weather.css">
 
-<script>
-$(document).ready(function(){
-$( "#cityfield" ).keyup(function() {
-     var url = "https://students.cs.byu.edu/~clement/CS360/ajax/getcity.cgi?q="+$("#cityfield").val();
-  $.getJSON(url,function(data) {    
-      
-      var everything;
-      everything = "<ul>";
-      $.each(data, function(i,item) {
-         everything += "<li> "+data[i].city;
-      });   
-      everything += "</ul>";
-      $("#txtHint").html(everything);
-    });
-      $("#button").click(function(e){
-      var value = $("#cityfield").val();
-      console.log(value);
-      e.preventDefault();
-      $("#dispcity").text(value);
-   
-     var myurl= "https://api.wunderground.com/api/42f3dc0e0a7e03ec/geolookup/conditions/q/UT/";
-  myurl += value;
-  myurl += ".json";
- // console.log(myurl);
-  $.ajax({
-    url : myurl,
-    dataType : "jsonp",
-    success : function(parsed_json) {
-      var location = parsed_json['location']['city'];
-      var temp_string = parsed_json['current_observation']['temperature_string'];
-      var current_weather = parsed_json['current_observation']['weather'];
-      everything = "<ul>";
-      everything += "<li>Location: "+location;
-      everything += "<li>Temperature: "+temp_string;
-      everything += "<li>Weather: "+current_weather;
-      everything += "</ul>";
-      $("#weather").html(everything);
-    }
-  });
-
-   });
-  });
-});
-
-</script>
-
-<style>
-
-#body{
-
-    margin: auto;
-    width: 30%;
-    padding: 10px;
-
-}
-
-#dispcity{
-    display: inline-block;
-    text-align: center;
-}
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
-<body>
-<h1 style ="text-align: center" >Weather Checker</h1>
-<div id="body">
-<form style ="text-align: center" >
-Enter A Utah City: <input type="text" id="cityfield" value=""><br>
-Suggestion: <span id="txtHint">Empty</span>
+
+<body id ="body">
+<div id="header">
+<br>
+<h1 class = "bold" style ="text-align: center; z-index:1;  font-family: Impact, Charcoal, sans-serif; font-size: 50px" >Weather Checker</h1>
+<br>
+</div>
+<div id="page">
+<form>
+<span class = "bold">Enter A Utah City: <span><input type="text" id="cityfield" value=""><br>
+<span class = "bold"> Suggestion: </span><span id="txtHint"></span>
 <input id="button" type="submit" value="Submit">
 </form>
-<p style =  "text-align:center">City</p>
+<br>
+<p style = "text-align:center">City</p>
 <textarea id="dispcity" placeholder="No City" ></textarea>
 <p style="text-align:center" >Current Weather</p>
 <div id="weather">No weather</div>
+</div>
+<div id="bg">
+<img src = "http://4.bp.blogspot.com/-93e_hz_F0Qo/TZizkH-qXhI/AAAAAAAAAYk/-AJ1u7Rah1M/s1600/rainy_weather.png">
 </div>
 </body>
 </html>
