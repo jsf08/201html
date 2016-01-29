@@ -1,0 +1,50 @@
+
+#page{
+border-radius: 25px;
+margin: auto;
+width: 30%;
+padding: 10px;
+z-index:1;
+background-color: white;
+}
+
+#dispcity{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#bg {
+position: fixed; 
+top: -50%; 
+left: -50%; 
+width: 200%; 
+height: 200%;
+z-index: -1;
+}
+
+#bg img {
+position: absolute; 
+top: 0; 
+left: 0; 
+right: 0; 
+bottom: 0; 
+margin: auto; 
+min-width: 50%;
+min-height: 50%;
+}
+
+.bold{
+font-weight: bold;
+font-size: 20px;
+}
+
+#header{
+
+border-radius: 25px;
+margin-top: 20px;
+margin-right: 50px;
+margin-left: 50px;
+margin-bottom: 15px;
+background-color: white;
+}
