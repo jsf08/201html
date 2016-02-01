@@ -1,0 +1,129 @@
+<CTYPE html>
+<style>
+#bg {
+position: fixed; 
+top: -50%; 
+left: -50%; 
+width: 200%; 
+height: 200%;
+z-index: -1;
+}
+
+#bg img {
+position: absolute; 
+top: 0; 
+left: 0; 
+right: 0; 
+bottom: 0; 
+margin: auto; 
+min-width: 50%;
+min-height: 50%;
+}
+
+#header{
+border-radius: 25px;
+margin-top: 20px;
+margin-right: 50px;
+margin-left: 50px;
+margin-bottom: 15px;
+background-color: white;
+}
+
+#form{
+margin-top: 20px;
+}
+
+
+.button{
+display:block; 
+text-align:center;
+margin:auto;
+}
+
+#page{
+border-radius: 25px;
+margin: auto;
+width: 30%;
+padding: 10px;
+z-index:1;
+background-color: white;
+}
+
+#dispcity{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.bold{
+font-weight: bold;
+font-size: 20px;
+}
+
+
+</style>
+
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+<div id="header">
+<h1 style ="text-align: center; z_index:1; font-family:Impact, Charcoal, sans-serif; font-size: 50px">My Family History List</h1>
+</div>
+
+<div id="page">
+<form id="form" ng-submit="todoAdd()">
+    <input type="text" ng-model="personInput" size="50" placeholder="Person">
+    <br>
+    <input type="text" ng-model="fatherInput" size="50" placeholder="Father">
+    <br>
+    <input type="text" ng-model="motherInput" size="50" placeholder="Mother">
+    <br>
+    <input class = "button" type="submit" value="Add New">
+
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+</div>
+
+<p><button class = "button" ng-click="remove()">Remove marked</button></p>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []); 
+app.controller('todoCtrl', function($scope) {
+
+    $scope.todoList = [];
+    $scope.entry = 
+
+    $scope.todoAdd = function() {
+        $scope.todoList.push({todoText:$scope.personInput + ", " +$scope.fatherInput + ", " + $scope.motherInput, done:false})
+        $scope.personInput = "";
+        $scope.fatherInput = "";
+        $scope.motherInput = "";
+
+    };
+
+    $scope.remove = function() {
+        var oldList = $scope.todoList;
+        $scope.todoList = [];
+        angular.forEach(oldList, function(x) {
+            if (!x.done) $scope.todoList.push(x);
+        });
+    };
+});
+
+</script>
+
+<div id="bg">
+<img src = "http://www.medievalarchives.com/wp-content/uploads/2011/12/Old-Parchment.jpg">
+</div>
+
+</body>
+</html>
+
+
