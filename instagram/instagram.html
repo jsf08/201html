@@ -1,0 +1,271 @@
+<head>
+ 
+ <title>Instagram Photo Viewer</title>
+ <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+
+  <link rel="shortcut icon" href="/media/img/favicon.ico">
+  <link rel="stylesheet" type="text/css"
+        href="/media/css/standalone.css"/>
+
+  <link rel="stylesheet" type="text/css"
+      href="/media/css/scrollable-horizontal.css" />
+<link rel="stylesheet" type="text/css"
+      href="/media/css/scrollable-buttons.css" />
+
+</head>
+<style>
+
+body {
+    padding:50px 80px;
+    font-family:"Lucida Grande","bitstream vera sans","trebuchet ms",sans-serif,verdana;
+}
+
+
+
+.scrollable {
+
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+    width: 550px;
+    height:120px;
+
+    /* custom decorations */
+    border:1px solid #ccc;
+    background:#efefef;
+}
+
+/*
+   root element for scrollable items. Must be absolutely positioned
+   and it should have a extremely large width to accomodate scrollable
+   items.  it's enough that you set the width and height for the root
+   element and not for this element.
+*/
+.scrollable .items {
+    /* this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+.items div {
+    float:left;
+    width:680px;
+}
+
+/* single scrollable item */
+.scrollable img {
+    float:left;
+    margin:20px 5px 20px 21px;
+    background-color:#fff;
+    padding:2px;
+    border:1px solid #ccc;
+    width:100px;
+    height:75px;
+
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+    float:left;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+    background:url(http://jsrun.it/assets/3/7/y/H/37yHB.png) no-repeat;
+    display:block;
+    width:30px;
+    height:30px;
+    float:left;
+    margin:40px 10px;
+    cursor:pointer;
+    font-size:1px;
+}
+
+/* right */
+a.right { background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover { background-position:-30px -30px; }
+a.right:active { background-position:-60px -30px; }
+
+
+/* left */
+a.left { margin-left: 0px; }
+a.left:hover  { background-position:-30px 0; }
+a.left:active { background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down  {
+    background:url(/media/img/scrollable/arrow/vert_large.png) no-repeat;
+    float: none;
+    margin: 10px 50px;
+}
+
+/* up */
+a.up:hover { background-position:-30px 0; }
+a.up:active { background-position:-60px 0; }
+
+/* down */
+a.down { background-position: 0 -30px; }
+a.down:hover { background-position:-30px -30px; }
+a.down:active { background-position:-60px -30px; }
+
+
+/* disabled navigational button */
+a.disabled {
+    visibility:hidden !important;
+}
+
+#image_wrap {
+    /* dimensions */
+    width:700px;
+    padding:15px 0;
+ 
+    /* centered */
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+ 
+    /* some "skinning" */
+    background-color:#efefef;
+    border:2px solid #fff;
+    outline:1px solid #ddd;
+    -moz-ouline-radius:4px;
+}
+
+#form{
+display: block;
+margin-top: 20px;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+}
+
+</style>
+
+<html>
+
+<body>
+<h1 style="text-align:center" >INSTAGRAM PHOTO VIEWER</h1>
+
+<div id="form">
+<form  ng-submit="query()">
+    <input type="text" ng-model="queryInput" size="50" placeholder="Search Hastags">
+    <br>
+    <input class = "button" type="submit" value="Search">
+
+</form>
+
+</div>
+<div id="image_wrap">
+  <!-- Initially the image is a simple 1x1 pixel transparent GIF -->
+  <img src="/media/img/blank.gif" width="500" height="375" />
+</div>
+
+
+
+<div style="margin:0 auto; width: 634px; height:120px;">
+<!-- "previous page" action -->
+<a class="prev browse left"></a>
+ 
+<!-- root element for scrollable -->
+<div class="scrollable" id="scrollable">
+ 
+  <!-- root element for the items -->
+  <div class="items">
+ 
+    <!-- 1-5 -->
+    <div>
+      <img src="http://farm1.static.flickr.com/143/321464099_a7cfcb95cf_t.jpg" />
+ <img src="http://farm4.static.flickr.com/3089/2796719087_c3ee89a730_t.jpg">
+      <img src="http://farm1.static.flickr.com/79/244441862_08ec9b6b49_t.jpg" />
+      <img src="http://farm1.static.flickr.com/28/66523124_b468cf4978_t.jpg" />
+    </div>
+ 
+    <!-- 5-10 -->
+    <div>
+      <img src="http://farm1.static.flickr.com/163/399223609_db47d35b7c_t.jpg" />
+      <img src="http://farm1.static.flickr.com/135/321464104_c010dbf34c_t.jpg" />
+      <img src="http://farm1.static.flickr.com/40/117346184_9760f3aabc_t.jpg" />
+      <img src="http://farm1.static.flickr.com/153/399232237_6928a527c1_t.jpg" />
+    </div>
+ 
+    <!-- 10-15 -->
+    <div>
+      <img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
+      <img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
+      <img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
+      <img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
+    </div>
+ 
+  </div>
+ 
+</div>
+ 
+<!-- "next page" action -->
+
+<a class="next browse right"></a>
+
+</div>
+
+<script>
+
+$(function() {
+  // initialize scrollable
+  $(".scrollable").scrollable();
+});
+
+</script>
+
+<script>
+$("scrollable").scrollable();
+ 
+$(".items img").click(function() {
+	// see if same thumb is being clicked
+	if ($(this).hasClass("active")) { return; }
+ 
+	// calclulate large image's URL based on the thumbnail URL (flickr specific)
+	var url = $(this).attr("src").replace("_t", "");
+ 
+	// get handle to element that wraps the image and make it semi-transparent
+	var wrap = $("#image_wrap").fadeTo("medium", 0.5);
+ 
+	// the large image from www.flickr.com
+	var img = new Image();
+ 
+
+	// call this function after it's loaded
+	img.onload = function() {
+ 
+		// make wrapper fully visible
+		wrap.fadeTo("fast", 1);
+ 
+		// change the image
+		wrap.find("img").attr("src", url);
+ 
+	};
+ 
+	// begin loading the image from www.flickr.com
+	img.src = url;
+ 
+	// activate item
+	$(".items img").removeClass("active");
+	$(this).addClass("active");
+ 
+// when page loads simulate a "click" on the first image
+}).filter(":first").click();
+
+</script>
+
+
+
+</body>
+</html>
