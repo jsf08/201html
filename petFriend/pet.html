@@ -1,0 +1,43 @@
+<CTYPE html>
+<html>
+<head>
+    
+<title>Pet Friend</title>
+
+    <link rel="stylesheet" type="text/css" href="pet.css">
+    
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="pet.js"></script>
+   
+</head>
+  
+  <body class="main">
+   
+
+    <div id="pic">
+   <img src="http://2.bp.blogspot.com/-aWizcCjVCTc/UROTf3BXilI/AAAAAAAAMn4/uEAvAxq6wkA/s1600/cat-and-dog-on-the-grass-wallpaper.jpg" height="300px">
+   </div>
+      <div id="header">
+      <h1>Pet Friend Finder</h1>
+      <img src ="http://boroughofpalmyra.com/wp-content/uploads/2014/05/Paw-print-heart.png" height="150px" > 
+      <br>
+      <h2>Feeling lonely this valentines day?</h2>
+      <br>
+      <h2>Animals will always love you - find your dream pet today!<br>Enter a potential pet below to find out more<h2>
+      <br>
+     <input type="search" id="text" placeholder="Enter pet type here"/>
+     <button onclick="searchbar()">Search</button>     
+    </div>
+
+    <div id="results" style="display: none";>
+      <div id="adoption_div" class="results"></div>
+      <br>
+      <div id="care_div" class="results"></div>  
+      <br>
+      <div id="medical_div" class="results"></div>
+     </div>
+
+  </body>
+</html>
+
