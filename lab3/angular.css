@@ -1,0 +1,45 @@
+.User-list {
+  list-style: none;
+}
+
+.Avatar {
+  text-align: center;  
+}
+
+.Avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.Avatar h4 {
+  text-transform: capitalize;
+  color: black;
+  font-weight:bold;
+  font-family:"Arial Black, Gadget, sans-serif";
+}
+
+h1{
+text-align:center;
+font-family:"Impact, Charcoal, sans-serif";
+
+}
+
+#content{
+border:3px black solid;
+padding:15px;
+width:50%;
+background-color:white;
+border-radius:25px;
+margin-left:auto;
+margin-right:auto;
+margin-top:100px;
+}
+
+body{
+background-image:url("http://i1370.photobucket.com/albums/ag244/IcingOnTheCake1/image_zpse6c2eada.jpg");
+background-repeat: no-repeat;
+background-size:100%;
+text-align:center;
+background-attachment: fixed;
+}
