@@ -1,0 +1,24 @@
+nohup: ignoring input
+
+> cities@0.0.0 start /home/bitnami/weatherNode/cities
+> node ./bin/www
+
+{ q: 'Pr' }
+/^Pr/
+Price
+Providence
+Provo
+[ { city: 'Price' }, { city: 'Providence' }, { city: 'Provo' } ]
+[0mGET /getcity?q=Pr [36m304 [0m14.263 ms - -[0m
+[0mGET / [32m200 [0m6.441 ms - 2529[0m
+[0mGET /weather.css [33m404 [0m7.829 ms - 1016[0m
+[0mGET / [32m200 [0m1.853 ms - 3068[0m
+[0mGET / [36m304 [0m0.840 ms - -[0m
+[0mGET / [36m304 [0m0.606 ms - -[0m
+[0mGET / [36m304 [0m0.467 ms - -[0m
+[0mGET / [36m304 [0m0.531 ms - -[0m
+[0mGET / [36m304 [0m0.451 ms - -[0m
+[0mGET / [36m304 [0m1.323 ms - -[0m
+[0mGET / [36m304 [0m1.106 ms - -[0m
+[0mGET / [36m304 [0m1.993 ms - -[0m
+[0mGET / [36m304 [0m0.953 ms - -[0m
