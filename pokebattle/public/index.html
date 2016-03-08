@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+<script src="javascripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta charset="utf-8">
+  <title>Pokemon Battle Simulator</title>
+
+</head>
+<body>
+
+<img id="bg1" style="width:100%;height:100%" src="http://orig08.deviantart.net/629e/f/2015/025/4/1/pokemon_oras_battle_background_by_jenske05-d8fbmbq.png">
+<div id="header" style="font-family:Impact, Charcoal, sans-serif"><h1>Pokemon Battle Simulator</h1></div>
+
+<div id = "playerSelect" style="margin-bottom:15px">
+<h3 style="font-size:30px">Choose number of trainers</h3>
+<div id="oak"><img src="http://images1.wikia.nocookie.net/__cb20101217154744/inciclopedia/images/0/09/Sprite_Profesor_oak_en_pokemon_azul.PNG"></div>
+<div id="numPlayers">
+<form>
+<input type="radio" name="trainer" id="1" value="one"><label style="font-size:20px">1 player <br></label>
+<input type="radio" name="trainer" id="2" value="two"><label style="font-size:20px">2 players<br><br></label>
+<button name="begin" type="button" onclick="selectScn()">Let's Get Started!</button>
+</form>
+</div>
+
+<div id="reminder">
+<img src="http://38.media.tumblr.com/081ee3239803bd42d20eb42891bc1b36/tumblr_inline_n96ilgkwNs1rtuvjh.jpg" height="200px">
+<h3>Oak's Reminder: <br><em>"Remeber types in battle!"</em></h3>
+</div>
+
+</div>
+
+<div id="starterSelection" style ="display:none">
+
+<div id="tie" style="display:none"><h2>It's a tie!</h2></div>
+<div id="win" style="display:none"><h2>You win!</h2></div>
+<div id="lose" style="display:none"><h2>Computer wins!</h2></div>
+<div id="P1W" style="display:none"><h2>Player 1 wins!</h2></div>
+<div id="P2W" style="display:none"><h2>Player 2 wins!</h2></div>
+
+<div id="starterSelector" style ="display:none">
+ <div id='app' ng-app='app' ng-controller='mainCtrl'>
+
+    <div ng-if='!pokemon.length' class='no-pokemon center stretch'>
+      <h1 class='h1'>
+        Set up your endpoint at `/pokemon` to get this view working
+      </h1>
+    </div>
+
+    <ul ng-if='pokemon.length' class='list center stretch'>
+      <li ng-repeat='p in pokemon' class='pokemon'>
+        <h1>{{ p.name }}</h1>
+        <img class='avatar' ng-src="{{p.avatarUrl}}" />
+      </li>
+    </ul>
+</div>
+<form id ="starter" style="display:none" >
+<label class="pokemon">
+ <input type="radio" name="pokes" id="grass" value="grass">
+  <img src="http://cdn.bulbagarden.net/upload/1/19/Pok%C3%A9_Ball_III.png" height="25px"style="float:left;margin-left:150px">
+</label>
+<label class="pokemon">
+  <input type="radio" name="pokes" id="fire" value="fire">
+  <img src="http://cdn.bulbagarden.net/upload/1/19/Pok%C3%A9_Ball_III.png" height="25px" style="float:left;margin-left:165px";
+</label>
+<label class="pokemon">
+  <input type="radio" name="pokes" id="water" value="water"> 
+   <img src="http://cdn.bulbagarden.net/upload/1/19/Pok%C3%A9_Ball_III.png" height="25px">
+</label>  
+</form>
+<br>
+</div>
+
+<button id="chooseYou" style="margin:auto; margin-top:15px; margin-bottom:25px" onclick="fighterSelect()">I Choose You!</button>
+
+
+  <div id="divFire" style="display: none">
+     <img src="http://24.media.tumblr.com/tumblr_ma0tijLFPg1rfjowdo1_500.gif" height="200px">
+  </div>
+  <div id="divGrass" style="display: none">
+  <img src="http://rs949.pbsrc.com/albums/ad339/FlameingElectricity/Animated%20Pokemon%20Sprites/001_zps2b3b00f2.gif~c200" height="200px">
+  </div>
+  <div id="divWater" style = "display: none">
+  <img src="http://25.media.tumblr.com/c7beb8c411a9447f326c54b531b1067a/tumblr_mhd98a5fT51s2ugo7o9_250.gif" height="200px">
+  </div>
+
+  <div id="vs" style="display: none; float:left; margin-left:100px; margin-top:30px">
+
+  <img src="http://static.comicvine.com/uploads/original/11122/111224371/4594532-4521099-9366942388-44897.png" height="150px">  
+
+  </div>
+
+  <div id="divFire2" style="display: none">
+     <img src="http://24.media.tumblr.com/tumblr_ma0tijLFPg1rfjowdo1_500.gif" height="200px">
+  </div>
+  <div id="divGrass2" style="display: none">
+  <img src="http://rs949.pbsrc.com/albums/ad339/FlameingElectricity/Animated%20Pokemon%20Sprites/001_zps2b3b00f2.gif~c200" height="200px">
+  </div>
+  <div id="divWater2" style = "display: none">
+  <img src="http://25.media.tumblr.com/c7beb8c411a9447f326c54b531b1067a/tumblr_mhd98a5fT51s2ugo7o9_250.gif" height="200px">
+  </div>
+
+<button id = "battle" style ="display:none; margin:auto; margin-bottom:25px" onclick="battle()">Begin Battle!<br></button>
+<button id = "P2select" style="display:none; margin:auto; margin-bottom:25px" onclick="selectScn()">Click for Player 2 Selection</button>
+<button id = "retry" style ="display:none; margin:auto;margin-bottom:15px;margin-top:250px" onclick="selectScn()">Try Again?<br></button>
+<button id = "newGame" style="display:none; margin:auto; margin-bottom:20px" onclick="location.reload();">New Game<br></button>
+
+
+</div>
+
+  <script>
+var playerPoke;
+var playerPoke2;
+var path = 0;
+
+function fighterSelect() {
+ 
+ if(path==3){
+     document.getElementById("chooseYou").style.display = "none";    
+
+     if(document.getElementById("grass").checked) {
+     document.getElementById("divGrass").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("P2select").style.display ="block";
+     document.getElementById("grass").checked = false;
+     playerPoke = 1;
+     path = 2;
+     }
+     else if(document.getElementById("fire").checked) { 
+     document.getElementById("divFire").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("P2select").style.display ="block";
+     document.getElementById("fire").checked = false;
+     playerPoke = 2;
+     path = 2;
+     }
+     else if(document.getElementById("water").checked) { 
+     document.getElementById("divWater").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("P2select").style.display ="block";
+     document.getElementById("water").checked = false;
+     playerPoke = 3;
+     path = 2;
+     }
+     else
+     {
+       document.getElementById("chooseYou").style.display = "block"; 
+     }
+ }
+ else if(path == 2){
+     document.getElementById("chooseYou").style.display = "none";    
+
+     if(document.getElementById("grass").checked) {
+     document.getElementById("divGrass").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("battle").style.display ="block";
+     document.getElementById("grass").checked = false;
+     playerPoke2 = 1;
+     
+     }
+     else if(document.getElementById("fire").checked) { 
+     document.getElementById("divFire").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("battle").style.display ="block";
+     document.getElementById("fire").checked = false;
+     playerPoke2 = 2;
+     
+     }
+     else if(document.getElementById("water").checked) { 
+     document.getElementById("divWater").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("battle").style.display ="block";
+     document.getElementById("water").checked = false;
+     playerPoke2 = 3;
+     
+     }
+ } 
+ else if(path == "0") {
+     document.getElementById("chooseYou").style.display = "none";
+    
+     if(document.getElementById("grass").checked) {
+     document.getElementById("divGrass").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("battle").style.display ="block";
+     document.getElementById("grass").checked = false;
+     playerPoke = 1;
+     }
+     else if(document.getElementById("fire").checked) { 
+     document.getElementById("divFire").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("battle").style.display ="block";
+     document.getElementById("fire").checked = false;
+     playerPoke = 2;
+     }
+     else if(document.getElementById("water").checked) { 
+     document.getElementById("divWater").style.display = "block";
+     document.getElementById("starterSelector").style.display = "none";
+     document.getElementById("starter").style.display ="none";
+     document.getElementById("battle").style.display ="block";
+     document.getElementById("water").checked = false;
+     playerPoke = 3;
+     }
+     else {
+     document.getElementById("chooseYou").style.display = "block"; 
+     }
+   }
+ 
+}
+
+function selectScn() {
+    document.getElementById("divWater").style.display = "none";
+    document.getElementById("divWater2").style.display = "none";
+    document.getElementById("divGrass").style.display = "none";
+    document.getElementById("divGrass2").style.display = "none";
+    document.getElementById("divFire").style.display = "none";
+    document.getElementById("divFire2").style.display = "none";
+    document.getElementById("retry").style.display = "none";
+    document.getElementById("newGame").style.display = "none";
+    document.getElementById("tie").style.display = "none";
+    document.getElementById("win").style.display = "none";
+    document.getElementById("lose").style.display = "none";
+    document.getElementById("vs").style.display = "none";
+    document.getElementById("divGrass").style.cssFloat = "none";
+    document.getElementById("divFire").style.cssFloat = "none";
+    document.getElementById("divWater").style.cssFloat = "none";
+    document.getElementById("divGrass2").style.cssFloat = "none";
+    document.getElementById("divFire2").style.cssFloat = "none";
+    document.getElementById("divWater2").style.cssFloat = "none";
+    document.getElementById("P2select").style.display = "none";
+    document.getElementById("P1W").style.display = "none";
+    document.getElementById("P2W").style.display = "none";
+    
+    if(document.getElementById("2").checked||path==4) {
+     if(path==4) {
+     path = 0;
+     }
+     if(path==0) {
+
+    document.getElementById("playerSelect").style.display = "none";
+    document.getElementById("starterSelection").style.display = "block";
+    document.getElementById("starterSelector").style.display = "block";
+    document.getElementById("starter").style.display = "block"; 
+    document.getElementById("chooseYou").style.display = "block";
+    path = 3;
+       }
+      else if(path==2){
+        document.getElementById("playerSelect").style.display = "none";
+        document.getElementById("starterSelection").style.display = "block";
+        document.getElementById("starterSelector").style.display = "block";
+        document.getElementById("starter").style.display = "block"; 
+        document.getElementById("chooseYou").style.display = "block";
+        
+       }
+    }
+    else if(document.getElementById("1").checked) {
+    document.getElementById("playerSelect").style.display = "none";
+    document.getElementById("starterSelection").style.display = "block";
+    document.getElementById("starterSelector").style.display = "block";
+    document.getElementById("starter").style.display = "block"; 
+    document.getElementById("chooseYou").style.display ="block"; 
+    path = 0;
+   }
+}
+
+function battle() {
+if (path == 2)
+{
+   console.log(playerPoke);
+   console.log(playerPoke2);
+   document.getElementById("divWater").style.display = "none";
+   document.getElementById("divWater2").style.display = "none";
+   document.getElementById("divGrass").style.display = "none";
+   document.getElementById("divGrass2").style.display = "none";
+   document.getElementById("divFire").style.display = "none";
+   document.getElementById("divFire2").style.display = "none";
+   document.getElementById("P2select").style.display = "none";  
+  
+   document.getElementById("divGrass").style.cssFloat = "left";
+   document.getElementById("divFire").style.cssFloat = "left";
+   document.getElementById("divWater").style.cssFloat = "left";
+   document.getElementById("divGrass2").style.cssFloat = "right";
+   document.getElementById("divFire2").style.cssFloat = "right";
+   document.getElementById("divWater2").style.cssFloat = "right";
+   document.getElementById("vs").style.display = "block";
+   document.getElementById("battle").style.display = "none";
+   
+   if(playerPoke == 1){
+   document.getElementById("divGrass").style.display = "block";
+   } 
+   else if(playerPoke == 2){
+   document.getElementById("divFire").style.display = "block";
+   }
+   else if(playerPoke == 3){
+   document.getElementById("divWater").style.display = "block";
+   }
+   
+ 
+   if(playerPoke2 == 1){
+   document.getElementById("divGrass2").style.display = "block";
+   } 
+   else if(playerPoke2 == 2){
+   document.getElementById("divFire2").style.display = "block";
+   }
+   else if(playerPoke2 == 3){
+   document.getElementById("divWater2").style.display = "block";
+   }
+   
+   if(playerPoke == playerPoke2) {
+   console.log("tie");
+   document.getElementById("tie").style.display = "block";
+   }
+   else if(playerPoke == 1 && playerPoke2 == 3||playerPoke == 3 && playerPoke2 == 2 || playerPoke == 2 && playerPoke2 == 1){
+   console.log("win");
+   document.getElementById("P1W").style.display = "block";
+   }
+   else if(playerPoke == 3 && playerPoke2 == 1 || playerPoke == 1 && playerPoke2 == 2 ||playerPoke == 2 && playerPoke2 == 3){
+   console.log("lose");
+   document.getElementById("P2W").style.display = "block";
+   }
+   
+   document.getElementById("retry").style.display = "block";
+   document.getElementById("newGame").style.display = "block";  
+   console.log(path);
+   path = 4;
+   console.log(path);
+ }
+
+
+
+else {
+   var comPoke =  Math.floor((Math.random() * 3) + 1);
+   
+   document.getElementById("divGrass").style.cssFloat = "left";
+   document.getElementById("divFire").style.cssFloat = "left";
+   document.getElementById("divWater").style.cssFloat = "left";
+   document.getElementById("divGrass2").style.cssFloat = "right";
+   document.getElementById("divFire2").style.cssFloat = "right";
+   document.getElementById("divWater2").style.cssFloat = "right";
+   document.getElementById("vs").style.display = "block";
+
+   document.getElementById("battle").style.display = "none";
+   if(comPoke == 1){
+   document.getElementById("divGrass2").style.display = "block";
+   } 
+   else if(comPoke == 2){
+   document.getElementById("divFire2").style.display = "block";
+   }
+   else if(comPoke == 3){
+   document.getElementById("divWater2").style.display = "block";
+   }
+   
+   if(playerPoke == comPoke) {
+   console.log("tie");
+   document.getElementById("tie").style.display = "block";
+   }
+   else if(playerPoke == 1 && comPoke == 3||playerPoke == 3 && comPoke == 2 || playerPoke == 2 && comPoke == 1){
+   console.log("win");
+   document.getElementById("win").style.display = "block";
+   }
+   else if(playerPoke == 3 && comPoke == 1 || playerPoke == 1 && comPoke == 2 ||playerPoke == 2 && comPoke == 3){
+   console.log("lose");
+   document.getElementById("lose").style.display = "block";
+   }
+    
+   document.getElementById("retry").style.display = "block";
+   document.getElementById("newGame").style.display = "block";
+ }  
+}
+</script>
+
+</body>
+</html>

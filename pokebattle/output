@@ -1,0 +1,21 @@
+nohup: ignoring input
+[0mGET / [36m304 [0m7.557 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m2.271 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.777 ms - -[0m
+In Pokemon
+[0mGET /pokemon [36m304 [0m5.690 ms - -[0m
+[0mGET / [36m304 [0m0.434 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.623 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.804 ms - -[0m
+In Pokemon
+[0mGET /pokemon [36m304 [0m0.908 ms - -[0m
+[0mGET / [36m304 [0m0.351 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.105 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m1.024 ms - -[0m
+In Pokemon
+[0mGET /pokemon [36m304 [0m0.575 ms - -[0m
+[0mGET / [36m304 [0m0.564 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.152 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.882 ms - -[0m
+In Pokemon
+[0mGET /pokemon [36m304 [0m0.553 ms - -[0m
