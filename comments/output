@@ -1,4 +1,703 @@
 nohup: ignoring input
 Connected
-[0mGET / [32m200 [0m7.557 ms - 596[0m
-[0mGET /javascripts/comments.js [32m200 [0m3.548 ms - 901[0m
+[0mGET / [36m304 [0m6.120 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.737 ms - -[0m
+[0mGET / [36m304 [0m0.889 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.340 ms - -[0m
+[0mGET / [32m200 [0m3.242 ms - 1059[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.422 ms - -[0m
+[0mGET / [32m200 [0m1.450 ms - 1124[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.953 ms - -[0m
+[0mGET / [32m200 [0m0.739 ms - 1173[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.378 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff } ]
+[0mGET /comment [36m304 [0m23.956 ms - -[0m
+[0mGET /? [32m200 [0m23.787 ms - 1173[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.517 ms - -[0m
+In the GET route?
+[0mGET /? [36m304 [0m2.184 ms - -[0m
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff } ]
+[0mGET /comment [36m304 [0m6.450 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.233 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff } ]
+[0mGET /comment [32m200 [0m5.817 ms - 372[0m
+[0mGET /? [36m304 [0m5.236 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.646 ms - -[0m
+POST comment route
+{ _id: 56e34af0faf886210201b97a, Comment: '', Name: '' }
+{ _id: 56e34af0faf886210201b97a, Comment: '', Name: '', __v: 0 }
+[0mPOST /comment [32m200 [0m35.668 ms - 2[0m
+[0mGET /? [36m304 [0m3.489 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.338 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [32m200 [0m4.359 ms - 438[0m
+[0mGET /? [36m304 [0m0.265 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.344 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m8.242 ms - -[0m
+[0mGET /? [36m304 [0m4.035 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.219 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m4.587 ms - -[0m
+[0mGET /? [36m304 [0m2.073 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.839 ms - -[0m
+[0mGET /? [36m304 [0m1.442 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m6.480 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.254 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [32m200 [0m4.805 ms - 438[0m
+[0mGET /? [36m304 [0m0.274 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.511 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m3.360 ms - -[0m
+[0mGET /? [36m304 [0m0.330 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.331 ms - -[0m
+[0mGET /? [32m200 [0m1.392 ms - 1173[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.640 ms - 929[0m
+In the GET route?
+[0mGET /? [36m304 [0m1.022 ms - -[0m
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m3.689 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.443 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m2.948 ms - -[0m
+[0mGET /? [36m304 [0m0.270 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.376 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a } ]
+[0mGET /comment [36m304 [0m4.722 ms - -[0m
+[0mGET /? [36m304 [0m3.553 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.264 ms - -[0m
+POST comment route
+{ _id: 56e34b71faf886210201b97b, Comment: '', Name: '' }
+{ _id: 56e34b71faf886210201b97b, Comment: '', Name: '', __v: 0 }
+[0mPOST /comment [32m200 [0m4.532 ms - 2[0m
+[0mGET /? [36m304 [0m1.510 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.308 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [32m200 [0m4.616 ms - 504[0m
+[0mGET /? [36m304 [0m3.237 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.282 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m7.398 ms - -[0m
+[0mGET /? [36m304 [0m0.255 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.937 ms - -[0m
+[0mGET /? [36m304 [0m0.421 ms - -[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.474 ms - 901[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m3.620 ms - -[0m
+[0mGET /? [36m304 [0m0.264 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.268 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m6.729 ms - -[0m
+[0mGET /? [36m304 [0m5.111 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.556 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m4.393 ms - -[0m
+[0mGET /? [36m304 [0m3.455 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.542 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m5.531 ms - -[0m
+[0mGET /? [36m304 [0m0.237 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.361 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m3.544 ms - -[0m
+[0mGET /? [36m304 [0m0.277 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.338 ms - -[0m
+In the GET route?
+[0mGET /? [36m304 [0m1.009 ms - -[0m
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m4.196 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.559 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [32m200 [0m7.604 ms - 504[0m
+[0mGET /? [36m304 [0m0.312 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.514 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m5.183 ms - -[0m
+[0mGET /? [36m304 [0m3.285 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.721 ms - -[0m
+In the GET route?
+[0mGET /? [36m304 [0m0.383 ms - -[0m
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m3.981 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.283 ms - -[0m
+[0mGET /? [32m200 [0m0.675 ms - 1151[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.465 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [32m200 [0m3.227 ms - 504[0m
+[0mGET /? [32m200 [0m1.376 ms - 1185[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.406 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m3.215 ms - -[0m
+[0mGET /? [32m200 [0m0.664 ms - 1196[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.356 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m4.237 ms - -[0m
+[0mGET /? [32m200 [0m0.634 ms - 1233[0m
+[0mGET /javascripts/comments.js [32m200 [0m1.139 ms - 901[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m7.894 ms - -[0m
+[0mGET /? [32m200 [0m1.850 ms - 1225[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.770 ms - 910[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m3.793 ms - -[0m
+[0mGET /? [32m200 [0m0.631 ms - 1226[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.388 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m3.108 ms - -[0m
+[0mGET /? [32m200 [0m0.643 ms - 1283[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.365 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Red',
+    Name: 'Fire',
+    _id: 56d8778b6b88cf617563f1e2 },
+  { __v: 0, Comment: '', Name: '', _id: 56e1ab350571de1172b36b2d },
+  { __v: 0,
+    Comment: '...',
+    Name: 'Red',
+    _id: 56e1ab610571de1172b36b2e },
+  { __v: 0,
+    Comment: 'I\'m the best',
+    Name: 'Jacob',
+    _id: 56e1aba50571de1172b36b2f },
+  { __v: 0,
+    Comment: 'I suck',
+    Name: 'Mandy',
+    _id: 56e2019b8287ac98733623ff },
+  { __v: 0, Comment: '', Name: '', _id: 56e34af0faf886210201b97a },
+  { __v: 0, Comment: '', Name: '', _id: 56e34b71faf886210201b97b } ]
+[0mGET /comment [36m304 [0m4.668 ms - -[0m

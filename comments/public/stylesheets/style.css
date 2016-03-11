@@ -1,8 +1,21 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.colourbox.com/preview/2109782-old-wooden-board-background.jpg");
 }
 
 a {
   color: #00B7FF;
+}
+
+#header{
+margin-left: auto;
+border-radius: 25px;
+border: 2px solid black;
+}
+
+#form{
+margin-left: auto;
+border-radius: 25px;
+border: 2px solid black;
 }

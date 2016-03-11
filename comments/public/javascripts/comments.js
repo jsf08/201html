@@ -17,7 +17,7 @@ $(document).ready(function(){
      $("#getThem").click(function() {
       $.getJSON('comment', function(data) {
         console.log(data);
-        var everything = "<ul>";
+        var everything = "<ul id=\'a\'>";
         for(var comment in data) {
           com = data[comment];
           everything += "<li>Name: " + com.Name + " -- Comment: " + com.Comment + "</li>";

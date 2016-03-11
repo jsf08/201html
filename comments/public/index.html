@@ -1,5 +1,47 @@
 <CTYPE html>
 <html>
+<style>
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://www.colourbox.com/preview/2109782-old-wooden-board-background.jpg");
+}
+
+a {
+  color: #00B7FF;
+}
+
+#header{
+margin: auto;
+margin-bottom:30px;
+text-align: center;
+border-radius: 25px;
+border: 2px solid black;
+background-color: white;
+width:75%;
+}
+
+#Fdiv{
+margin: auto;
+border-radius: 25px;
+text-align:center;
+border: 2px solid black;
+background-color: white;
+padding: 15px;
+width:50%;
+}
+
+#a{
+list-style-type: none;
+}
+
+#comments{
+width:50%; 
+text-align:left; 
+margin:auto;
+}
+</style>
+
 <head>
   <title>Comments!</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -7,7 +49,14 @@
 </head>
 
 <body>
+
+ <div id="header">
+  <h1>Comment Board</h1>
+  </div>
+
+<div id="Fdiv">
 <form id="commentForm" action="">
+ 
   <label for="name">Name: </label><input type="text" id="Name" placeholder="Name"><br>
   <label for="comment">comment: </label><input type="text" id="Comment" placeholder="Comment"><br>
 </form>
@@ -17,6 +66,8 @@
 <div id="json"></div>
 <div id="done"></div>
 <div id="comments"></div>
+</div>
+
 </body>
 </html>
 
