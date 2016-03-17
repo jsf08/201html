@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="./javascripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+  <meta charset="utf-8">
+  <title>Photo Board</title>
+</head>
+
+<body>
+
+<img id="bg1" style="width:100%;height:100%" src="http://cdn.pcwallart.com/images/camera-tumblr-wallpaper-1.jpg">
+  
+<div id='app' ng-app='app' ng-controller='mainCtrl'>
+<div style="text-align:center; margin:auto;margin-top:25px; margin-bottom:25px;background-color: white; border:2px solid black; width:50%; border-radius:25px">
+
+<h1>Community Photo Board</h1>
+
+<h3>Enter photo url below to add to the board!</h3>
+  <form id="newPoki" ng-submit="addPoki()">
+    Url: <input type="url" ng-model="Url" value=""><br>
+    <input type="submit" value="Submit" onclick="myFunction()">
+  </form>
+   <h3>Hold click on photo to enlarge</h3>
+   <br>
+</div>
+  <div>
+    <div ng-if='!pokemon.length'>
+          
+    </div>
+
+    <ul ng-if='pokemon.length' class='list center stretch'>
+      <li ng-repeat='p in pokemon' class='pokemon'> 
+        <img class='photo' ng-src="{{p.avatarUrl}}" />
+      </li>
+    </ul>
+
+  </div>
+</div>
+<script>
+
+function myFunction() {
+}
+
+</script>
+</body>
+</html>

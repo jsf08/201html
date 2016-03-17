@@ -1,0 +1,66 @@
+nohup: ignoring input
+Connection established to mongodb://localhost:27017/pokemon
+[0mGET / [32m200 [0m13.205 ms - 1293[0m
+[0mGET / [32m200 [0m4.560 ms - 1293[0m
+[0mGET /javascripts/app.js [32m200 [0m3.141 ms - 875[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.669 ms - 1029[0m
+In Pokemon
+No Documents found
+[0mGET / [36m304 [0m1.928 ms - -[0m
+[0mGET /pokemon [32m- [0m- ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m1.540 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.346 ms - -[0m
+In Pokemon
+No Documents found
+[0mGET / [36m304 [0m0.604 ms - -[0m
+[0mGET /pokemon [32m- [0m- ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.504 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.476 ms - -[0m
+In Pokemon
+No Documents found
+[0mGET / [36m304 [0m2.006 ms - -[0m
+[0mGET /pokemon [32m- [0m- ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.731 ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m0.745 ms - -[0m
+In Pokemon
+No Documents found
+In Pokemon Post
+{ avatarUrl: 'http://www.freecreatives.com/wp-content/uploads/2015/10/beach-waves-sunset-wide-high-definition-wallpaper.jpg' }
+Inserted NaN documents into the "pokemon" collection. The documents inserted with "_id" are: { result: { ok: 1, n: 1 },
+  ops: 
+   [ { avatarUrl: 'http://www.freecreatives.com/wp-content/uploads/2015/10/beach-waves-sunset-wide-high-definition-wallpaper.jpg',
+       _id: 56ea45187aa8e246435eedca } ],
+  insertedCount: 1,
+  insertedIds: [ 56ea45187aa8e246435eedca ] }
+[0mPOST /pokemon [32m200 [0m316.804 ms - -[0m
+In Pokemon Post
+{ avatarUrl: 'http://cdn.bleedingcool.net/wp-content/uploads/2016/02/pokemon_blue.0.01.jpg' }
+Inserted NaN documents into the "pokemon" collection. The documents inserted with "_id" are: { result: { ok: 1, n: 1 },
+  ops: 
+   [ { avatarUrl: 'http://cdn.bleedingcool.net/wp-content/uploads/2016/02/pokemon_blue.0.01.jpg',
+       _id: 56ea45227aa8e246435eedcb } ],
+  insertedCount: 1,
+  insertedIds: [ 56ea45227aa8e246435eedcb ] }
+[0mPOST /pokemon [32m200 [0m3.232 ms - -[0m
+In Pokemon Post
+{ avatarUrl: 'https://s-media-cache-ak0.pinimg.com/736x/e2/d3/68/e2d3688917fd6ceba6a47390d4d9bf08.jpg' }
+Inserted NaN documents into the "pokemon" collection. The documents inserted with "_id" are: { result: { ok: 1, n: 1 },
+  ops: 
+   [ { avatarUrl: 'https://s-media-cache-ak0.pinimg.com/736x/e2/d3/68/e2d3688917fd6ceba6a47390d4d9bf08.jpg',
+       _id: 56ea452c7aa8e246435eedcc } ],
+  insertedCount: 1,
+  insertedIds: [ 56ea452c7aa8e246435eedcc ] }
+[0mPOST /pokemon [32m200 [0m2.618 ms - -[0m
+[0mGET / [36m304 [0m0.802 ms - -[0m
+[0mGET /pokemon [32m- [0m- ms - -[0m
+[0mGET /javascripts/app.js [36m304 [0m1.225 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.370 ms - -[0m
+In Pokemon
+Query Worked
+[ { _id: 56ea45187aa8e246435eedca,
+    avatarUrl: 'http://www.freecreatives.com/wp-content/uploads/2015/10/beach-waves-sunset-wide-high-definition-wallpaper.jpg' },
+  { _id: 56ea45227aa8e246435eedcb,
+    avatarUrl: 'http://cdn.bleedingcool.net/wp-content/uploads/2016/02/pokemon_blue.0.01.jpg' },
+  { _id: 56ea452c7aa8e246435eedcc,
+    avatarUrl: 'https://s-media-cache-ak0.pinimg.com/736x/e2/d3/68/e2d3688917fd6ceba6a47390d4d9bf08.jpg' } ]
+[0mGET /pokemon [32m200 [0m4.857 ms - 423[0m
