@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Best Music</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="javascripts/app.js"></script>
+<style>
+
+.page-header{
+text-align:center;
+margin:auto;
+margin-top:25px; 
+margin-bottom:25px;
+background-color: white; 
+border:2px solid black; 
+border-radius:25px;
+width:50%;
+}
+
+#page{
+z-index:1;
+color:Black;
+}
+
+#bg1{
+height:100%;
+width:100%;
+bottom: 0;
+right: 0;
+position: fixed;
+z-index:-1;
+}
+
+#form1{
+text-align:center;
+margin:auto;
+margin-top:25px; 
+margin-bottom:25px;
+}
+
+#list{
+  text-align: center;
+  list-style: none;
+  color: black;
+  border-radius:15px;
+  margin:auto;
+  margin-bottom:75px; 
+  border:2px solid black; 
+  width:100%;
+  border-radius:15px;
+  background-color: white;
+  padding-bottom:15px;
+}
+
+</style>
+</head>
+
+<img id="bg1" style="width:100%;height:100%;z-index:-1" src="https://www.polywoodinc.com/blog/wp-content/uploads/2015/12/Headphones-Music.jpg">
+<div id="page">
+<body ng-app="comment" ng-controller="MainCtrl">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="page-header"> 
+  <h1>Best Music </h1>
+</div>
+<div id ="list">
+<div id="form1">
+<h3>Input info for your favorite song!</h3>
+  <form ng-submit="addComment()" style = "margin-top30px;">
+    <p> Song Title:<input type="text" ng-model="formContent"></input><br></p>
+    <p> Album: <input type="text" ng-model="Album"></input><br></p>
+    <p> Artist: <input type="text" ng-model="Artist"></input><br></p>
+    <p> Genre: <input type="text" ng-model="Genre"></input><br></p>
+    <p> Album Art URL: <input type="text" ng-model="Art"></input><br></p>
+    
+    <button type="submit">Add Music</button>
+  </form>
+
+</div>
+  <div>
+   <h3>See resluts below! Upvote your favorites!</h3> 
+  </div>
+  <div ng-repeat="comment in comments | orderBy:['genre','-upvotes']">
+    <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
+  <b> Song Title: </b>{{comment.title}}<b> Album Title: </b>{{comment.album}}<b> Artist: </b>{{comment.artist}} <b>Genre: </b>{{comment.genre}} <img style="height:100px"src={{comment.art}}> - <b> upvotes: {{comment.upvotes}}</b>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
